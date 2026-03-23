@@ -1,5 +1,16 @@
 
 
+03-23/2026 Update #2:
+
+It occurs to me that I should probably explain what is going to be in the first publicly shipping alpha/prototype version, which I've already designated as version 0.85. The key elements will be: 
+
+-A dashboard, that combines RDP status and risk assessment information presentment with installation and management features for the "Modes" that will be used to protect RDP. 
+-A prototype SSH --> RDP mode that employs an outer SSH tunnel that uses cryptographic mutual authentication to securely connect a client to the machine being accessed. 
+-An accompanying client key creator/client package generator that produces an (optionally) passphrase-encrypted package that can be run in standard user mode on Windows machines. The package includes portable SSH binaries and a custom RDP connect file. The only installation required involves the user approving addition of the RDP server's leaf certificate to the user store to allow enforced auth of the RDP server without (hopefully) the user needing to see/deal with message box prompts.
+
+Of note, other than RDP server certificate pinning being enforced there will be no necessary changes to how you use RDP itself. Whatever setup you have in place can remain in place. (However, currently I'm only pursuing compatibility with scenarios that have NLA on.)
+
+
 03/23/2026 Project Update:
 
 My intent coming into this just-finished weekend was to ship a first public alpha/preview build on Sunday. (And, against a voice in my head telling me I should err on the side of caution in what I publicly commit to, I made a statement to that effect on Twitter.) It did seem like a reasonable expectation in some ways. The prototype was feature locked, all necessary functionality was in place, some important tests were passing, etc. All that seemed left to do was to test wnd debug the actual UI/combined user experience of using the progrem.

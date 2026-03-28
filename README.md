@@ -1,4 +1,9 @@
 
+03/28/2026 Update #2:
+
+On track for initial public release either tomorrow or early in the work week. Decision on that will come tonight.
+
+
 03/28/2026 Update:
 
 At just before 7:00am EDT this morning the first real end-to-end test of Secure RDP SSH/RDP protection mode succeeded. 

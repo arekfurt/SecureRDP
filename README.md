@@ -1,4 +1,10 @@
 
+03/29/2026 Update:
+
+Alas, won't ship today. Between ongoing bug hunting in UI wizards and Claude session limits progress is back to being a bit slower than I'd like. Hoping for tomorrow, but not going to push something that has enough problems with usability of core functionality that asking people to test and evaluate it would mean asking them to waste their time. 
+On the good side, I am going to bring back into the initial release a couple of features that are near-core in significance and that I can get ready in the periods I'm waiting for my Claude session limits to reset.
+
+
 03/28/2026 Update #2:
 
 On track for initial public release either tomorrow or early in the work week. Decision on that will come tonight.

@@ -1,3 +1,9 @@
+03/30/2026 Update:
+
+
+Key end-to-end tests of essential functionality in core scenarios are passing. Now moving from debugging last breaking issues that I've personally found in core features into handling more of some fit & finish things. Tonight: more tests, more bug fixes, working on some basic documentation. Then working down the final public release build pre-launch checklist begins.
+Come back tomorrow. :)
+
 
 03/29/2026 Update:
 

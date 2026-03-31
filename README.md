@@ -1,3 +1,12 @@
+03/31/2026 Update:
+
+Launch day. :)
+
+Go for main engine start.
+
+Check back here this evening (EDT).
+
+
 03/30/2026 Update:
 
 

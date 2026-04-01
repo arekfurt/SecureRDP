@@ -2,8 +2,8 @@
 ## SecureRDP initial public testing/dev/alpha release - Version 0.85 ##
 #### March 31, 2026 ####
 
-
-Files coming. Standby...
+To get started:
+Unzip the archive and find the file ServerWizard.ps1 in the root of the folder. Right-click on it, click "run as Powershell", and make your way through the expected security dialogs. You'll see a welcome screen on first-launch that will direct you onward.
 
 ### Known Issues ###
 

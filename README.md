@@ -11,7 +11,22 @@ The goal of the SecureRDP project is to educate Windows-using organizations, pow
 
 ## What SecureRDP Does ##
 
-Simply put, SecureRDP tries to make it much easier to understand and improve RDP security for remotely accessing important Windows machines and networks over very low trust networks between clients and servers.
+SecureRDP tries to make it much easier to understand and improve RDP security for remotely accessing important Windows machines and networks over very low trust networks between clients and servers.
+SecureRDP tries to make it much easier to understand and improve RDP security for remotely accessing important Windows machines and networks over very low trust networks between clients and servers.
+
+Put another way, SecureRDP is intended to help people and organizations protect and secure their use of RDP using technologies already within Windows more easily than they could today.
+
+How?
+
+1. SecureRDP includes a dashboard and widgets that are intended to help you easily visualize and appreciate your current RDP-related security posture against remote, over-the-network attack--which is an very important part of securing Windows well generally. In version 0.85 there is a firewall configuration assessment widget that tries to calculate the effective total exposure of your RDP port/s to inbound traffic allowed by the currently active firewall profile in Windows Firewall. This is paired with a currently off-by-default widget that attempts to read your Windows Event 261 logs (and starts keeping those logs if you aren't right now) to spot actual connection attempts made against RDP on your machine from the Internet. More widgets and more advanced versions of these two are coming, but already today if both these widgets are showing red alarm states you need to evaluate or reevaluate whether you have a very serious problem. (Any time RDP is directly exposed to inbound traffic from arbitrary Internet addresses you should start with a presumption that you have a very serious problem.)
+   
+2. SecureRDP introduces the concept of RDP protection "modes", which are intended to help those who today may feel they have to leave RDP exposed to inbound traffic from presumably hostile networks (like the Internet, although this can apply to situations where you are trying to secure access to critical assets and key administrative machines inside a normal organizational network as well) with mere password protection or with password + phishable-MFA defenses in place. SecureRDP modes will protect RDP by making sure it is wrapped in cryptographically sound tunnels and, most importantly, by implementing cryptographic mutual authentication. This far better ensures that both client and remote host are who they say they are and, by defintion, breaks the password-based and MFA-bypass-based attacks that RDP alone is usually subject to.
+
+Right now, the only Mode in SecureRDP is a prototype SSH ---> RDP Mode that tunnels RDP--with no changes to an existing configuration--through a SSH tunnel created by hardened configurations on both ends. But it is intended that more options will be available in the near-ish future.
+
+3. SecureRDP currently contains what you might call two "lockdown" measures you can enable that are designed to literally force any RDP access to a machine to go through a protective mode instead of happening directly. SecureRDP can, at your option, enable firewall rules to block all direct RDP access (TCP and UDP), and additionally tell the RDP listener to only listen for and allow RDP connections to come from a Secure RDP mode tunnel (over port forwarding and localhost). Note: Changing what this RDP listener listens to regarding inbound RDP connections is officially documented but has so little existing information widely available about it that I am currently labeling this "experimental".
+
+4. Other features related to RDP security are in the works in various stages of development and internal testing but did not make the cut for this initial public testing release.
 
 -------------------------------------
 

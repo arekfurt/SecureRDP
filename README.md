@@ -30,7 +30,9 @@ How?
 
 ## Getting Started + An Important Notice ##
 To get started:
-Unzip the archive and find the file ServerWizard.ps1 in the root of the folder. Right-click on it, click "run as Powershell", and make your way through the expected security dialogs. You'll see a welcome screen on first-launch that will direct you onward.
+On a machine that you would like to enable (more) secure access to using a SSH + RDP tunnel, unzip the SecureRPD archive and find the file ServerWizard.ps1 in the root of the folder. Right-click on it, click "run as Powershell", and make your way through the expected security dialogs. You'll see a welcome screen on first-launch that will direct you onward to the main status dashboard. Click the Quick Start tile on the left to launch a wizard that will take you through installing SecureRPD setup and management on  the machine and generating your first client key and client archive package. Move the client package archive via some appropriately secure means (it contains an unencrypted private key!) to your test client Windows machine, extract the folder, open it, and double click the Connect.cmd file.
+
+(Note: A feature that uses a passphase-encrypted archive to protect the client private key in transit will ship very shortly.) 
 
 ### Notice: ###
 

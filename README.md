@@ -1,5 +1,5 @@
-# RDP-Armoring initial public testing/dev/alpha release - Version 0.851 #
-#### Released: April 4, 2026 ####
+# RDP-Armoring testing/dev/alpha release - Version 0.86 #
+#### Released: April 7, 2026 ####
 
 ## Getting Started + An Important Notice ##
 To get started:

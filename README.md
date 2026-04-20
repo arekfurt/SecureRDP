@@ -1,15 +1,19 @@
-# RDP Armoring (RDPA) testing/dev/alpha release - Version 0.86 
+# RDP Armoring (RDPA) testing/alpha release - Version 0.87 
 --------------------------------
 
 ### What is RDPA? ###
 
-Simply put, RDPA (RDP Armoring) is about making highly secure remote desktop access easy to achieve for Windows-using organizations and individuals and at no additional cost beyond the OS itself using proven technologies that are maintained and serviced as part of Windows.
+Simply put, RDPA (RDP Armoring) is about making highly secure remote desktop access easy to achieve for Windows-using organizations and individuals, at no additional cost beyond the OS itself. Using proven technologies that are maintained and serviced as part of Windows.
 
-RDPA seeks to make using RDP much more secure than it is as it is today most commonly configured and employed. It does this by placing RDP in an outer tunnel that uses mutual cryptographic authentication, protecting RDP from essentially all real-world tactics employed by attackers against it. RDPA requires no installation of any third-party code to handle that (meaning: it just configures and monitors Windows components) or any connection to cloud services. 
-
-Anyway, that's the concept.
+RDPA seeks to make using RDP much more secure than it is today, at least compared to how RDP is most commonly configured and employed. It does this by placing RDP in an outer tunnel that uses mutual cryptographic authentication, protecting RDP from essentially all real-world tactics employed by attackers against it. RDPA requires no installation of any third-party code to handle that (meaning: it just configures and monitors Windows components) or any connection to cloud services. 
 
 Currently, RDPA is in a late alpha/early beta phase of development. It supports protecting RDP with an outer SSH tunnel that uses public key mutual auth and hardened client and server configurations.
+
+#### 04/19/2026 Update: ####
+
+I'm quite pleased, after a considerable amount of work, to finally announce the public release of RDP Armor (RDPA) version 0.87. 
+
+Most notably 0.87 includes a client-side automatic encryption system for the remote user's private key/s intended to prevent theft of them by commodity malware or loss/exposure of them by accidental means. Moreover, the RDPA software now supports using IPv6 for remote SSH tunnel connectivity and has added an array of small usability improvements. But probably most importantly, extensive efforts have been invested over the last 10 days in making the RDPA codebase better and the software considerably more reliable. And more secure. This release marks a substantial advance toward achieving beta quality release status and begins a march toward being ready for wider use in the very near future. 
 
 #### 04/07/2026 Update: ####
 
